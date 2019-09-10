@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1568077183 source:c:\users\alumno\desktop\sosa\programacion_1_laboratorio_1\clase6.03\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
