@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1568676561 source:c:\users\alumno\desktop\sosa\programacion_1_laboratorio_1\clase8.1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"funciones.h"
+
+1568676966 c:\users\alumno\desktop\sosa\programacion_1_laboratorio_1\clase8.1\funciones.h
+
+1568677035 source:c:\users\alumno\desktop\sosa\programacion_1_laboratorio_1\clase8.1\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"funciones.h"
+
