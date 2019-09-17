@@ -41,8 +41,8 @@ void mostrarTodos(ePersona per[],int cantidad)
 {
     int i;
 
-    for(i=0; i<cantidad; i++)
-    {
+    for(i=0; i<cantidad; i++){
+
         mostrarUno(per[i]);
     }
 }
