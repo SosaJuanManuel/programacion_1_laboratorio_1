@@ -7,5 +7,7 @@ typedef struct
 
 }ePersona;
 
-ePersona alta(ePersona per);
-void mostrar(ePersona per);
+void alta(ePersona per[],int cantidad);
+void mostrarUno(ePersona per);
+void mostrarTodos(ePersona per[],int cantidad);
+

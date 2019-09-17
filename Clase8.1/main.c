@@ -2,17 +2,18 @@
 #include <stdlib.h>
 #include <string.h>
 #include "funciones.h"
-#define CANT 5
+#define CANT 3
 
 int main()
 {
-    int i;
-    ePersona per[5];
 
-    for(i=0; i<CANT; i++)
-    {
-        per[i] = alta(per[i]);
-        mostrar(per[i]);
-    }
+    ePersona pers[5];
+
+    alta(pers,CANT);
+
+    system("cls");
+
+    mostrarTodos(pers,CANT);
+
     return 0;
 }
