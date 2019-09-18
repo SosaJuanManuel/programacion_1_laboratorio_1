@@ -101,11 +101,12 @@ void init(ePersona pers[],int cantidad)
     }
 }
 
-void mostrarPais(ePersona pers[],int cantidad)
+/*void mostrarPais(ePersona pers[],int cantidad)
 {
     int i,j;
 
 
 
 
-}
+}*/
+//debe traer un id de cada persona con sus nacionalidades

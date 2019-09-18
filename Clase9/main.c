@@ -8,18 +8,23 @@ int main()
     char seguir='s';
     int opcion;
 
-    //ePersona pers[CANT]= {{"ap1","no1",1,1,1,1900},{"ap2","no2",2,2,2,1901},{"ap3","no3",3,3,3,1902},{"ap4","no4",4,4,4,1903},{"ap5","no5",5,5,5,1904}};
+    /*ePersona pers[CANT]= {{"ap1","no1",1,1,1,1900},
+     {"ap2","no2",20,2,2,1901},
+     {"ap3","no3",13,3,3,1902},
+     {"ap4","no4",58,4,4,1903},
+     {"ap5","no5",40,5,5,1904}};*/ //harcodeo
+
     ePersona pers[CANT];
     init(pers,CANT);
 
     do
     {
-        printf("\n----------------------------\n"
+        printf("\n-----------------OPCIONES---------\n"
                "presiona 1 para Alta"
                "\npresiona 2 para Mostrar"
                "\npresiona 3 para Ordenar"
                "\npresiona 4 para Limpiar pantalla"
-               "\npresiona 5 para Salir\n----------------------------\n");
+               "\npresiona 5 para Salir\n----------------------------------\n");
         fflush(stdin);
         scanf("%d",&opcion);
 
