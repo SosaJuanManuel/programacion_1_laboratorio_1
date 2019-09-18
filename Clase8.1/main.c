@@ -1,19 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 #include "funciones.h"
-#define CANT 3
+#define CANT 5
 
 int main()
 {
 
-    ePersona pers[5];
+    ePersona pers[CANT];
 
     alta(pers,CANT);
 
     system("cls");
 
     mostrarTodos(pers,CANT);
+
+    ordenar(pers,CANT)
 
     return 0;
 }

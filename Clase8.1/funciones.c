@@ -2,13 +2,13 @@
 #include <stdlib.h>
 #include <string.h>
 #include "funciones.h"
-#define CANT 3
+#define CANT 5;
 
-void alta(ePersona per[],int cantidad)
+void alta(ePersona pers[],int cantidad)
 {
     int i;
 
-    for(i=0; i<cantidad; i++)
+    for(i=0; i<CANT; i++)
     {
         printf("\nIngrese su Nombre: ");
         fflush(stdin);
@@ -22,7 +22,7 @@ void alta(ePersona per[],int cantidad)
         fflush(stdin);
         scanf("%d",&per[i].Edad);
 
-        system("cls");
+        system("cls")
 
         per[i].isEmpty = 0;
     }
@@ -37,12 +37,29 @@ void mostrarUno(ePersona per)
     printf("\n-----------------------\n");
 }
 
-void mostrarTodos(ePersona per[],int cantidad)
+void mostrarTodos(ePersona pers[],int cantidad)
 {
     int i;
 
-    for(i=0; i<cantidad; i++){
+    for(i=0; i<CANT; i++){
         mostrarUno(per[i]);
     }
 }
 
+void ordenar(ePersona pers[],int cantidad)
+{
+    int i,j,auxPer;
+
+    for(i00;i<CANT-1;i++)
+    {
+        for(j=i+1;j<CANT;j++)
+        {
+            if(pers[i].edad>pers[j].edad)
+            {
+                auxPer=pers[i];
+                pers[i]=pers[j];
+                pers[j]=auxPer;
+            }
+        }
+    }
+}

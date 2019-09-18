@@ -4,10 +4,9 @@ typedef struct
     char Nombre[31];
     int Edad;
     int isEmpty;
-
 }ePersona;
 
-void alta(ePersona per[],int cantidad);
+void alta(ePersona pers[],int cantidad);
 void mostrarUno(ePersona per);
-void mostrarTodos(ePersona per[],int cantidad);
-
+void mostrarTodos(ePersona pers[],int cantidad);
+void ordenar(ePersona pers[],int CANT);
