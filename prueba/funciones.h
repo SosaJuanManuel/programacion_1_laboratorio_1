@@ -12,11 +12,13 @@ typedef struct
 typedef struct
 {
     char apellido[31];
-    char Nombre[31];
-    int Edad;
+    char nombre[31];
+    int edad;
     eFecha FechaNac;
     int isEmpty;
     int ePaisId;
+    int dni;
+
 } ePersona;
 
 void alta(ePersona per[],int cantidad);

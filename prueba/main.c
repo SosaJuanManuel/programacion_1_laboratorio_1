@@ -8,8 +8,8 @@ int main()
     char seguir='s';
     int opcion;
 
-    ePersona pers[CANT]= {{"ap1","no1",1,0,1,1,1900},{"ap2","no2",2,0,2,2,1901},{"ap3","no3",3,0,3,3,1902},{"ap4","no4",4,0,4,4,1903},{"ap5","no5",5,0,5,5,1904}};
-    //ePersona pers[CANT];
+    //ePersona pers[CANT]= {{"ap1","no1",1,0,1,1,1900},{"ap2","no2",2,0,2,2,1901},{"ap3","no3",3,0,3,3,1902},{"ap4","no4",4,0,4,4,1903},{"ap5","no5",5,0,5,5,1904}};
+    ePersona pers[CANT];
     init(pers,CANT);
 
     do
@@ -40,16 +40,13 @@ int main()
             seguir='n';
             printf("\nAdios\n");
             break;
+        case 5:
+            Baja(pers,CANT);
+            break;
         }
-
     }
     while(seguir=='s');
-
-
     return 0;
-
-
-
 }
 
 

@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1567472320 source:c:\users\alumno\desktop\calculadora 2.0\funciones.c
+	<stdio.h>
+	<stdlib.h>
+
+1567466168 source:c:\users\alumno\desktop\calculadora 2.0\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1567465338 c:\users\alumno\desktop\calculadora 2.0\funciones.h
+
+1567472322 source:e:\programacion 2019 cuatri 2\calculadora 2.0\funciones.c
+	<stdio.h>
+	<stdlib.h>
+
+1567567674 source:f:\programacion 2019 cuatri 2\calculadora 2.0\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1567566996 f:\programacion 2019 cuatri 2\calculadora 2.0\funciones.h
+
+1567566994 source:f:\programacion 2019 cuatri 2\calculadora 2.0\funciones.c
+	<stdio.h>
+	<stdlib.h>
+

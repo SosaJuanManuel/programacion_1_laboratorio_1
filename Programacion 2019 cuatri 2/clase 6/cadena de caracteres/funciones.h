@@ -1,0 +1,2 @@
+
+void fagets (char *nombre);

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1568156438 source:c:\users\alumno\desktop\ordenamiento de arrays paralelos\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
