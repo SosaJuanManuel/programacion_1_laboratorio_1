@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
+#include "almuerzos.h"
 #define CANT 5
-#include "funciones.h"
 
 int main()
 {
@@ -48,7 +49,3 @@ int main()
     while(seguir=='s');
     return 0;
 }
-
-
-
-

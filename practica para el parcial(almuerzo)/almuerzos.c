@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
+#include "almuerzos.h"
 #define CANT 5
-#include "funciones.h"
 
 void alta(ePersona per[],int cantidad)
 {
@@ -48,13 +49,17 @@ void alta(ePersona per[],int cantidad)
 
                 break;
             }
+            else
+            {
+                printf("Error");
+            }
         }
         k++;
         if(k < cantidad)
         {
             do
             {
-                printf("ingresar otro dato? s/n: ");
+                printf("ingresar otro dato? s/n :");
                 fflush(stdin);
                 scanf("%c",&ingresar);
             }
@@ -82,15 +87,17 @@ void mostrarTodos(ePersona per[],int cantidad)
 {
     int i=0;
 
-
-    for(i=0; i<CANT; i++)
+    if(per[i].isEmpty==0)
     {
-        if(per[i].isEmpty==0)
+        for(i=0; i<CANT; i++)
         {
             mostrarUno(per[i]);
         }
     }
-
+    else
+    {
+        printf("\nError, Datos Incompletos!!!\n");
+    }
 }
 
 void ordenar(ePersona pers[],int cantidad)
@@ -123,21 +130,20 @@ void init(ePersona pers[],int cantidad)
 void Baja (ePersona per[], int cantidad)
 {
     int auxDNI;
-    int flag,i;
+    int flag=0,i;
     char rta;
 
-    printf("\nque DNI desea buscar?\n");
+    printf("que DNI desea buscar?");
     scanf("%d", &auxDNI);
 
-    for(i=0; i<cantidad; i++)
+    for(i=0; i<CANT; i++)
     {
-        flag=0;
         if(auxDNI==per[i].dni)
         {
-            printf("\nDNI:%d\nApellido:%s\nNombre:%s\nEdad:%d\nFecha de ingreso (dd/mm/aa): %d/%d/%d\n",per[i].dni, per[i].apellido, per[i].nombre,per[i].edad,per[i].FechaNac.dia,per[i].FechaNac.mes,per[i].FechaNac.anio);
+            printf("\nDNI:%d\nApellido:%s\nNombre:%s\nEdad:%d\n",per[i].dni, per[i].apellido, per[i].nombre,per[i].edad);
             do
             {
-                printf("\nDesea borrar este registro? s/n: ");
+                printf("\nDesea borrar este registro s/n");
                 fflush(stdin);
                 scanf("%c",&rta);
             }
@@ -145,20 +151,18 @@ void Baja (ePersona per[], int cantidad)
             if(rta=='s')
             {
                 per[i].isEmpty=1;
-                flag=1;
-                printf("\n**Carga Eliminada**\n");
-                break;
             }
             else
             {
-                printf("\nEliminacion cancelada\n");
+                printf("\nno se dio de baja\n");
             }
         }
+        flag=1;
+        break;
     }
     if (flag==0)
-        {
-            printf("No existe la carga\n");
-        }
+    {
+        printf("no existe dato\n");
+    }
 }
-
 
