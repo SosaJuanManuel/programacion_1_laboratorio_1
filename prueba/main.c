@@ -1,51 +1,52 @@
+#include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
-#define CANT 5
-#include "funciones.h"
+#include "utn.h"
+#include "empleados.h"
+
+
+#define QTY_TIPO 1000
 
 int main()
 {
-    char seguir='s';
     int opcion;
+    int contadorIdempleados=0;
+    Empleado arrayEmpleado[QTY_TIPO];
 
-    //ePersona pers[CANT]= {{"ap1","no1",1,0,1,1,1900},{"ap2","no2",2,0,2,2,1901},{"ap3","no3",3,0,3,3,1902},{"ap4","no4",4,0,4,4,1903},{"ap5","no5",5,0,5,5,1904}};
-    ePersona pers[CANT];
-    init(pers,CANT);
+
+    empleados_Inicializar(arrayEmpleado,QTY_TIPO);
+
 
     do
     {
-        printf("\nBienvenido:\n\npresiona 1 para Alta \npresiona 2 para Mostrar \npresiona 3 para Ordenar \npresiona 4 para Salir\npresiona 5 para la baja\n");
-        fflush(stdin);
-        scanf("%d",&opcion);
-
+        utn_getUnsignedInt("\nEmpleadoes\n1) Alta \n2) Modificar \n3) Baja \n4)informe \n5)Salir\n",
+                      "\nError",1,sizeof(int),1,11,1,&opcion);
         switch(opcion)
         {
-        case 1:
-            system("cls");
-            printf("ALTA:\n");
-            alta(pers,CANT);
-            break;
-        case 2:
-            system("cls");
-            printf("Mostrar:\n");
-            mostrarTodos(pers,CANT);
-            break;
-        case 3:
-            system("cls");
-            printf("Ordenar:\n");
-            ordenar(pers,CANT);
-            mostrarTodos(pers,CANT);
-            break;
-        case 4:
-            seguir='n';
-            printf("\nAdios\n");
-            break;
-        case 5:
-            Baja(pers,CANT);
-            break;
+            case 1: //Alta
+                empleados_alta(arrayEmpleado,QTY_TIPO,&contadorIdempleados);
+                break;
+            case 2: //Modificar
+                empleados_modificar(arrayEmpleado,QTY_TIPO);
+                break;
+
+            case 3: //Baja
+                empleados_baja(arrayEmpleado,QTY_TIPO);
+                break;
+
+            case 4://Listar
+                empleados_ordenarPorString(arrayEmpleado,QTY_TIPO);
+                empleados_listar(arrayEmpleado,QTY_TIPO);
+                break;
+
+            case 5://Informe
+                break;
+            default:
+                printf("\nOpcion no valida");
+
         }
     }
-    while(seguir=='s');
+    while(opcion!=5);
     return 0;
 }
 

@@ -1,13 +1,30 @@
 # depslib dependency file v1.0
-1569364675 source:c:\users\alumno\desktop\sosa\programacion_1_laboratorio_1\prueba\main.c
+1569455862 source:c:\users\alumno\desktop\sosa\programacion_1_laboratorio_1\prueba\main.c
 	<stdio.h>
 	<stdlib.h>
 	"funciones.h"
 
-1569363062 c:\users\alumno\desktop\sosa\programacion_1_laboratorio_1\prueba\funciones.h
+1569456236 c:\users\alumno\desktop\sosa\programacion_1_laboratorio_1\prueba\funciones.h
 
-1569369981 source:c:\users\alumno\desktop\sosa\programacion_1_laboratorio_1\prueba\funciones.c
+1569455862 source:c:\users\alumno\desktop\sosa\programacion_1_laboratorio_1\prueba\funciones.c
 	<stdio.h>
 	<stdlib.h>
 	"funciones.h"
+
+1569457104 source:c:\users\alumno\desktop\sosa\programacion_1_laboratorio_1\prueba\empleados.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+	"empleados.h"
+
+1569456236 c:\users\alumno\desktop\sosa\programacion_1_laboratorio_1\prueba\utn.h
+
+1569456281 c:\users\alumno\desktop\sosa\programacion_1_laboratorio_1\prueba\empleados.h
+
+1569456236 source:c:\users\alumno\desktop\sosa\programacion_1_laboratorio_1\prueba\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
 

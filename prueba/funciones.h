@@ -1,13 +1,13 @@
 typedef struct
 {
     int dia,mes,anio;
-} eFecha;
+}eFecha;
 
 typedef struct
 {
     int Id;
     char descripcion[31];
-} ePais;
+}ePais;
 
 typedef struct
 {
@@ -19,7 +19,7 @@ typedef struct
     int ePaisId;
     int dni;
 
-} ePersona;
+}ePersona;
 
 void alta(ePersona per[],int cantidad);
 void mostrarUno(ePersona per);
