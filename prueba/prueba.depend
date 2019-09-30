@@ -1,8 +1,10 @@
 # depslib dependency file v1.0
-1569455862 source:c:\users\alumno\desktop\sosa\programacion_1_laboratorio_1\prueba\main.c
+1569884088 source:c:\users\alumno\desktop\sosa\programacion_1_laboratorio_1\prueba\main.c
+	<string.h>
 	<stdio.h>
 	<stdlib.h>
-	"funciones.h"
+	"utn.h"
+	"empleados.h"
 
 1569456236 c:\users\alumno\desktop\sosa\programacion_1_laboratorio_1\prueba\funciones.h
 
@@ -11,18 +13,18 @@
 	<stdlib.h>
 	"funciones.h"
 
-1569457104 source:c:\users\alumno\desktop\sosa\programacion_1_laboratorio_1\prueba\empleados.c
+1569884687 source:c:\users\alumno\desktop\sosa\programacion_1_laboratorio_1\prueba\empleados.c
 	<string.h>
 	<stdio.h>
 	<stdlib.h>
 	"utn.h"
 	"empleados.h"
 
-1569456236 c:\users\alumno\desktop\sosa\programacion_1_laboratorio_1\prueba\utn.h
+1569880999 c:\users\alumno\desktop\sosa\programacion_1_laboratorio_1\prueba\utn.h
 
-1569456281 c:\users\alumno\desktop\sosa\programacion_1_laboratorio_1\prueba\empleados.h
+1569883924 c:\users\alumno\desktop\sosa\programacion_1_laboratorio_1\prueba\empleados.h
 
-1569456236 source:c:\users\alumno\desktop\sosa\programacion_1_laboratorio_1\prueba\utn.c
+1569880999 source:c:\users\alumno\desktop\sosa\programacion_1_laboratorio_1\prueba\utn.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>

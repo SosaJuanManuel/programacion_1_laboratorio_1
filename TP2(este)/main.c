@@ -3,16 +3,20 @@
 #include <stdlib.h>
 #include "utn.h"
 #include "empleados.h"
-#define MAX_EMPLOYEE 1000
+
+
+#define QTY_TIPO 1000
 
 int main()
 {
     int opcion;
-    int i=0;
-    Employee arrayEmployee[MAX_EMPLOYEE];
+    int contadorIdempleados=0;
+    Empleado arrayEmpleado[QTY_TIPO];
 
 
-    empleado_Inicializar(arrayEmployee,MAX_EMPLOYEE);
+    empleados_Inicializar(arrayEmpleado,QTY_TIPO);
+
+
     do
     {
         utn_getUnsignedInt("\nEmpleadoes\n1) Alta \n2) Modificar \n3) Baja \n4)informe \n5)Salir\n",
@@ -20,19 +24,19 @@ int main()
         switch(opcion)
         {
             case 1: //Alta
-                addEmployee(arrayEmployee,MAX_EMPLOYEE,&i);
+                empleados_alta(arrayEmpleado,QTY_TIPO,&contadorIdempleados);
                 break;
             case 2: //Modificar
-                empleado_modificar(arrayEmployee,MAX_EMPLOYEE);
+                empleados_modificar(arrayEmpleado,QTY_TIPO);
                 break;
 
             case 3: //Baja
-                removeEmployee(arrayEmployee,MAX_EMPLOYEE,1);
+                empleados_baja(arrayEmpleado,QTY_TIPO);
                 break;
 
             case 4://Listar
-                empleado_ordenarPorString(arrayEmployee,MAX_EMPLOYEE);
-                printEmployees(arrayEmployee,MAX_EMPLOYEE);
+                empleados_ordenarPorString(arrayEmpleado,QTY_TIPO);
+                empleados_listar(arrayEmpleado,QTY_TIPO);
                 break;
 
             case 5://Informe
@@ -45,7 +49,3 @@ int main()
     while(opcion!=5);
     return 0;
 }
-
-
-
-

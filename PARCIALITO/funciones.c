@@ -81,8 +81,6 @@ void mostrarUno(ePersona per)
 void mostrarTodos(ePersona per[],int cantidad)
 {
     int i=0;
-
-
     for(i=0; i<CANT; i++)
     {
         if(per[i].isEmpty==0)
@@ -90,7 +88,6 @@ void mostrarTodos(ePersona per[],int cantidad)
             mostrarUno(per[i]);
         }
     }
-
 }
 
 void ordenar(ePersona pers[],int cantidad)
@@ -160,5 +157,4 @@ void Baja (ePersona per[], int cantidad)
             printf("No existe la carga\n");
         }
 }
-
 

@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include "utn.h"
 #include "empleados.h" //cambiar por nombre entidad
+#define CANT 5
 
 
 /** \brief  To indicate that all position in the array are empty,
@@ -148,33 +149,31 @@ int empleado_buscarString(Employee array[], int size, char* valorBuscado, int* i
 * \return int Return (-1) si Error [largo no valido o NULL pointer o no hay posiciones vacias] - (0) si se agrega un nuevo elemento exitosamente
 *
 */
-int addEmployee(Employee array[], int size, int* contadorID)
+int addEmployee(Employee list[], int len, int id, char name[],char lastName[],float salary,int sector)
 {
-    int retorno=-1;
-    int posicion;
-    if(array!=NULL && size>0 && contadorID!=NULL)
-    {
-        if(empleado_buscarEmpty(array,size,&posicion)==-1)
+    int retorno=1;
+    int i;
+
+        for(i=0;){
+
+
+        }
+        if(i == id)
         {
-            printf("\nNo hay lugares vacios");
+            printf("ya existe ese id");
         }
         else
         {
-            (*contadorID)++;
-            array[posicion].id=*contadorID;
-            array[posicion].isEmpty=0;
-            utn_getName("nombre\n: ","\nError",1,TEXT_SIZE,1,array[posicion].name);
-            utn_getTexto("apellido\n: ","\nError",1,TEXT_SIZE,1,array[posicion].lastName);
-            utn_getFloat("salario:\n ","\nError",1,100000,1,1000000000,1,&array[posicion].salary);
-            utn_getUnsignedInt("\nsector: ","\nError",1,sizeof(int),1,1000,1,&array[posicion].sector);
-            printf("\n Posicion: %d\n ID: %d\n name: %s\n lastname: %s \nsalary: %.3f\n sector: %d\n",
-                   posicion, array[posicion].id,array[posicion].name,array[posicion].lastName,array[posicion].salary,array[posicion].sector);
-            retorno=0;
+            Employee.id=id[i];
+            Employee.lastName=lastName[i];
+            Employee.name=name[i];
+            Employee.salary=salary[i];
+            Employee.sector=sector[i];
+            retorno =0;
         }
-    }
+
     return retorno;
 }
-
 //*****************************************
 //Baja valor unico
 /** \brief Borra un elemento del array por ID
@@ -225,7 +224,7 @@ int empleado_modificar(Employee array[], int sizeArray)                         
     if(array!=NULL && sizeArray>0)
     {
         utn_getUnsignedInt("\nID a modificar: ","\nError",1,sizeof(int),1,sizeArray,1,&id);         //cambiar si no se busca por ID
-        if(empleado_buscarEmpty(array,sizeArray,id)==-1)                                   //cambiar si no se busca por ID
+        if(empleado_buscarID(array,sizeArray,id,&posicion)==-1)                                   //cambiar si no se busca por ID
         {
             printf("\nNo existe este ID");                                                          //cambiar si no se busca por ID
         }
@@ -299,4 +298,3 @@ int printEmployees(Employee* list, int length)                      //cambiar em
     }
     return retorno;
 }
-

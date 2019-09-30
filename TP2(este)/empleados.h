@@ -22,7 +22,7 @@ int empleado_buscarEmpty(Employee array[], int size, int* posicion);            
 int empleado_buscarID(Employee array[], int size, int valorBuscado, int* posicion);                    //cambiar empleado
 int empleado_buscarInt(Employee array[], int size, int valorBuscado, int* posicion);                    //cambiar empleado
 int empleado_buscarString(Employee array[], int size, char* valorBuscado, int* indice);                    //cambiar empleado
-int addEmployee(Employee array[], int size, int* contadorID);//cambiar empleado
+int addEmployee(Employee list[], int len, int id, char name[],char lastName[],float salary,int sector);                          //cambiar empleado
 int removeEmployee(Employee* list, int len, int id);                                      //cambiar empleado
 int empleado_bajaValorRepetidoInt(Employee array[], int sizeArray, int valorBuscado);
 int empleado_modificar(Employee array[], int sizeArray);                                //cambiar empleado

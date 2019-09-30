@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1569882582 source:c:\users\alumno\desktop\sosa\programacion_1_laboratorio_1\parcialito\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1569882582 c:\users\alumno\desktop\sosa\programacion_1_laboratorio_1\parcialito\funciones.h
+
+1569882703 source:c:\users\alumno\desktop\sosa\programacion_1_laboratorio_1\parcialito\main.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	"funciones.h"
+	"utn.h"
+
+1569882536 source:c:\users\alumno\desktop\sosa\programacion_1_laboratorio_1\parcialito\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+
+1569882613 c:\users\alumno\desktop\sosa\programacion_1_laboratorio_1\parcialito\utn.h
+
