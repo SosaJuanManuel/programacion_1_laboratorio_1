@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "../inc/LinkedList.h"
+#include "linkedList.h"
 
 
 static Node* getNode(LinkedList* this, int nodeIndex);
@@ -590,3 +590,4 @@ int ll_reduce(LinkedList* this, int (*pFunc)(void*))
     }
     return returnAux;
 }
+

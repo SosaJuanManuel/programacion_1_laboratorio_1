@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1574210197 source:c:\users\alumno\desktop\sosa\parcial2\linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"linkedList.h"
+
+1574210177 c:\users\alumno\desktop\sosa\parcial2\linkedlist.h
+
+1446667744 source:c:\users\alumno\desktop\sosa\parcial2\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1574210373 source:c:\users\alumno\desktop\sosa\parcial2\controller.c
+	<stdio.h>
+	<stdlib.h>
+	"linkedList.h"
+	"parser.h"
+	"funciones.h"
+	"controller.h"
+
+1574210517 c:\users\alumno\desktop\sosa\parcial2\parser.h
+
+1574210586 c:\users\alumno\desktop\sosa\parcial2\funciones.h
+
+1574210366 c:\users\alumno\desktop\sosa\parcial2\controller.h
+
